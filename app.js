@@ -20,3 +20,5 @@ const endDateSquare = companies.map(company => Math.sqrt(company.end));
 console.log(endDateSquare);
 const sortCompaniesByYears = companies.sort((a,b) => a.start>b.start ? 1:-1);
 console.log(sortCompaniesByYears);
+const addingNumbersUsingReduce = ages.reduce((a,b) => a+b,0);
+console.log(addingNumbersUsingReduce);
