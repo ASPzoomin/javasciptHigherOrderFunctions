@@ -22,3 +22,9 @@ const sortCompaniesByYears = companies.sort((a,b) => a.start>b.start ? 1:-1);
 console.log(sortCompaniesByYears);
 const addingNumbersUsingReduce = ages.reduce((a,b) => a+b,0);
 console.log(addingNumbersUsingReduce);
+const combiningAllHigherOrderFunctions = ages
+.map(age => age*2)
+.filter(age => age>20)
+.sort((a,b) => a-b)
+.reduce((a,b) => a+b,0);
+console.log(combiningAllHigherOrderFunctions);
